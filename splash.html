@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-e</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/fonts.css">
+
+    <style>
+      body{
+        background-image: url('images/bg.jpeg'); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: top left;
+      }
+      .title{
+        text-align: center;
+        margin-top: 5em;
+        font-size: 36px;
+      }
+      h2{
+        font-size: 22px;
+      }
+
+
+.buscar-caja {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: #fff;
+ height: 40px;
+ border-radius: 40px;
+ padding: 10px;
+}
+
+
+
+.buscar-btn {
+
+ color: #e84118;
+ float: right;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.4s;
+ color: white;
+ cursor: pointer;
+}
+
+
+
+.buscar-txt {
+  width: 240px;
+ padding: 0 6px;
+ border: none;
+ background: none;
+ outline: none;
+ /*took out float:left*/
+ color: white;
+ font-size: 16px;
+ transition: 0.4s;
+ line-height: 40px;
+ font-weight: bold;
+} 
+
+    </style>
+    
+</head>
+<body>
+  <nav>
+    <button class="openbtn" onclick="openNav()">&#9776; Explore Content</button>
+  </nav>
+    <header>
+            <div class="title">
+              <div class="buscar-caja">
+               
+               <input type="text" name="" class="buscar-txt" disabled />
+               
+               <a class="buscar-btn">
+                <i class="fa fa-search" aria-hidden="true" style="color: #2f3640 "></i>
+               </a><span style="float: left; font:Product_Sans;">
+                How to make life easy
+             </span>
+              </div>
+            </div>
+    </header>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="pages/about.html" target="_self">About</a>
+        <a href="pages/inaugural.html">Introduction</a>
+        <a href="pages/post 1.html">First Webpage</a>
+        <a href="pages/dashboard.html">Dashboard</a>
+        <a href="pages/book3.html">My 3 Books</a>
+        <a href="pages/creds.html">Background Credits</a>
+
+        
+      </div>
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementsByClassName("row title").style.marginLeft = "2500px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementsByClassName("row title").style.marginLeft = "0";
+      }</script>
+</body>
+
+</html>
+
+

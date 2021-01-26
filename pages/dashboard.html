@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dashboard</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			/*color image repeat attachement position*/ 
+			background: url(../images/blogbg.jpg) repeat fixed;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			display: grid;
+			overflow: hidden;
+		}
+		.title-box { /*position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);*/
+		 position: absolute;
+		 top:-10vh;
+		 left:10vw;
+		 background: #fff;
+		 height: 10vh;
+		 border-radius: 40px;
+		 padding: 10px;
+		 width: 33vw;
+
+		}
+
+		.title-btn {
+		 color: #e84118;color: white;
+		 cursor: pointer;
+		 width: 40px; height: 40px;
+		 border-radius: 50%;
+		 display: flex;float: right;
+		 justify-content: center;
+		 align-items: center;
+		 margin-top: 1vh;
+		 margin-right: 1vw;
+		 transition: 0.4s;}
+
+		.title-txt { /*took out float:left*/
+		 width: 240px;
+		 padding: 0 6px;
+		 border: none;outline: none;
+		 background: none;color: white;
+		 font-weight: bold;
+		 transition: 0.4s;
+		 /*line-height: 40px;*/}
+
+		 header{
+		 	display: grid;
+		 	grid-column: 1;grid-row-start:1;
+		 	position: relative;
+		 	top:25vh;
+		 }
+		  .quick{
+		 	display: grid;
+		 	grid-column-start: 3;grid-row-start:1;
+		 }
+		 article{
+		 	display: grid;
+		 	grid-column-start: 1;grid-row-start:2;
+
+		 }
+		  .apps{
+		 	display: grid;
+		 	grid-column-start: 3;grid-row-start:2;
+		 	height: 33vh; width: 33vw;
+		 }
+		 .apps > div{
+		 	height: 25vh;width: 25vw;
+		 }
+		 img{
+		 	max-width:100%;
+			max-height:100%;
+			border: 1px solid black;
+		 }
+		 .cool {
+			  background-color: #008CBA;
+			  border: none;
+			  color: white;
+			  padding: 15px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 4px 2px;
+			  cursor: pointer;
+			}
+			em{
+				all:unset;
+			}
+		 
+		</style>
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<header>
+	<div class="title-box">
+               
+               <input type="text" name="" class="title-txt" disabled />
+               
+               <a class="title-btn">
+                <i class="fa fa-search fa-5x" aria-hidden="true" style="color: #2f3640" ></i>
+               </a><span style="float: left; font:Product_Sans;">
+                <em style="font-size: 4rem;">H</em>ow <em style="font-size: 4rem;">T</em>o <em style="font-size: 4rem;">M</em>ake <em style="font-size: 4rem;">L</em>ife <em style="font-size: 4rem;">e</em>asy
+             </span>
+              </div>
+              <div style="clear: both;"></div></div>
+    </header>
+    <aside class="quick"><div><a href="../splash.html"class="cool">MAIN BLOG</a></div>
+    	<div><a href="" download="" class="cool">MLA PAGES</a></div></aside>
+   
+<div style="top:50vh;left:20vw;position: fixed;"><h1>The Agenda Section</h1><a href="list.html"><img src="../images/agenda.jpg"></a></div>
+   
+    </div>
+    <aside class="apps">
+    	<div><a href="calendar.html"><img src="../images/calendar.png"></a></div>
+    	<div><a href="todo/todo.html"><img src="../images/todo.png"></a></div>
+    </aside>
+	</body>
+</html>
+
+    	

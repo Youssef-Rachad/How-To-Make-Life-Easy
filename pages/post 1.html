@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Post 1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+		
+
+		<style type="text/css">
+			.collapsible {
+		  background-color: #777;
+		  color: white;
+		  cursor: pointer;
+		  padding: 18px;
+		  width: 95%;
+		  border: none;
+		  text-align: left;
+		  outline: none;
+		  font-size: 15px;
+
+		}
+		.active, .collapsible:hover {
+			  background-color: #555;
+			}
+
+			.content {
+			  padding: 0 18px;
+			  max-height: 0;
+			  overflow: hidden;
+			  transition: max-height 0.2s ease-out;
+			  background-color: #f1f1f1;
+			}
+			/* Style the tab */
+			.tab {
+			  overflow: hidden;
+			  border: 1px solid #ccc;
+			  background-color: #f1f1f1;
+			}
+
+			/* Style the buttons inside the tab */
+			.tab button {
+			  background-color: inherit;
+			  float: left;
+			  border: none;
+			  outline: none;
+			  cursor: pointer;
+			  padding: 14px 16px;
+			  transition: 0.3s;
+			  font-size: 17px;
+			}
+
+			/* Change background color of buttons on hover */
+			.tab button:hover {
+			  background-color: #ddd;
+			}
+
+			/* Create an active/current tablink class */
+			.tab button.active {
+			  background-color: #ccc;
+			}
+
+			/* Style the tab content */
+			.tabcontent {
+			  display: none;
+			  padding: 6px 12px;
+			  border: 1px solid #ccc;
+			  border-top: none;
+			}
+
+			/* Style the close button */
+			.topright {
+			  float: right;
+			  cursor: pointer;
+			  font-size: 28px;
+			}
+
+			.topright:hover {color: red;}
+
+			/* Style the tab content */
+			.tabcontent {
+			  display: none;
+			  padding: 6px 12px;
+			  border: 1px solid #ccc;
+			  border-top: none;
+			  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+			} 
+
+
+			/* Go from zero to full opacity */
+			@keyframes fadeEffect {
+			  from {opacity: 0;}
+			  to {opacity: 1;}
+			}
+
+		.tutorial{
+			border: 1rem solid #ccc;
+			overflow: hidden;
+		    display: flex;
+		}
+		/* The Modal (background) */
+		.modal {
+		  display: none; /* Hidden by default */
+		  position: fixed; /* Stay in place */
+		  z-index: 1; /* Sit on top */
+		  left: 0;
+		  top: 0;
+		  width: 100%; /* Full width */
+		  height: 100%; /* Full height */
+		  overflow: auto; /* Enable scroll if needed */
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+
+		/* Modal Content/Box */
+		.modal-content {
+		  background-color: #fefefe;
+		  margin: 15% auto; /* 15% from the top and centered */
+		  padding: 20px;
+		  border: 1px solid #888;
+		  width: 60vw; /* Could be more or less, depending on screen size */
+		}
+
+		/* The Close Button */
+		.close {
+		  color: #aaa;
+		  float: right;
+		  font-size: 28px;
+		  font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+		  color: black;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+		</style>
+		
+	</head><div class="bigboi">
+    <body>
+
+        <div id="conten">
+			<header>
+				<div class="container">
+					<div class="row">
+						<span><button class="openbtn" onclick="openNav()">&#9776; Explore Content</button></span>
+						<!--<span style="margin-left: 10em;"><img src="images/logo.png" alt="oops"></span>-->
+					</div>
+				</div>
+			</header>
+			<div id="mySidebar" class="sidebar">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="../splash.html" target="_self">Home</a>
+				<a href="about.html" target="_self">About</a>
+				<a href="inaugural.html">Introduction</a>
+				<a href="dashboard.html">Dashboard</a>
+				<a href="book3.html">My 3 Books</a>
+				<a href="creds.html">Background Credits</a>
+
+				
+			  </div>
+			  <script>
+			  function openNav() {
+				document.getElementById("mySidebar").style.width = "250px";
+				document.getElementsByClassName("row title").style.marginLeft = "2500px";
+			  }
+			  
+			  function closeNav() {
+				document.getElementById("mySidebar").style.width = "0";
+				document.getElementsByClassName("row title").style.marginLeft = "0";
+			  }</script> 
+
+		<article class="introduction">
+			<h1><a class="highlight">Of Habit Building and Website Creating</a></h1>
+			<h2>If you want to express your creativity in hopes of improving your organisation, you will definitely need to build a habit.</h2>
+
+			<time datetime="04-30-2020">APR. 30, 2020</time>
+			<p>
+				<em>Welcome back to the blog, everyone! I hope you are doing well and are ready to get coding. 
+				</em> Today, we will be setting up the website in a way that allows us to easily maintain it for effective use. <br> Before we begin, I would like to send my greatest thanks to all of the medical, safety, and technical workers who keep the Earth turning during this COVID-19 pandemic. Moreover, I would like to express my deepest gratitude to the teachers, administrative workers, and IT workers who make online learning possible. These wonderful people allow me to continue working and learning despite the ongoing crisis, thus I owe them my education more than ever.
+
+            </p>
+            <h3>Is there such a thing as having too much time?</h3>
+            
+            <figure class="size-1" style="padding-top: 50px;"><img src="../images/younger.jpg" alt="oops"></figure>
+			<figcaption><p>This is Sheldon. Sheldon likes to play with lasers and trains. However, Sheldon knows he needs to do his homework first and keep a healthy routine. Be like Sheldon.</p></figcaption>
+            
+            <p>
+				While learning from home renders your day very flexible, the freedom that comes with online school makes way for bad habits to creep in and ruin your potential efficiency. Another prominent issue is the difficulty in differentiating subcategories of the time we now have on our hands whether you study or work. Personally, I found myself wondering: 
+				<ul>
+					<li>
+					"Am I spending enough time on this specific activity?"</li>
+					<li>"Am I really on track with my long term goals?"</li>
+					<li>"Should I spend more/less time with family/social media?"</li>   
+            </p>
+            <div style="display: flex;">
+			<p style="display: inline-block;">In response to this, I started my website and taught my younger sisters to play chess, so I would say things are going great.</p>
+			<figure class="size-3" style="display: inline-block;float:right;">
+				<img src="../images/chess.jpeg">
+			</figure></div>
+			<figure class="size-3" style="padding-top: 50px;">
+				<h2 style="text-align: center;">So just like last time…	</h2>
+				<img src="../images/gameplan.jpg" alt="oops"></figure>
+			<figcaption><p>It's time to draw a GAME PLAN!</p></figcaption>
+			<div>
+			<h3>What is the mindset behind this project?</h3>
+			<p>First, we need to lay down the foundation upon which our website will be built, or in other words, answer the following question:<br>
+				“How do I convert all of this potential productivity into actual, kinetic productivity?”<br>
+			Now, I would like to suggest the three following principles the website should adhere to. Should you feel the need to adapt them your way, feel free to do as you wish. The goal here is to set yourself up for success, and I bet you know yourself better than I do!</p>
+
+			<ul>
+					<li><h4 >1. DEVELOPPING THE WEBSITE HAS TO BE EASY</h4><br>No point in complicating it. The website is here to assist your time management, hence the name of the blog.
+					</li>
+					<li><h4>2. IT NEEDS TO BOOST YOUR PRODUCTIVITY</h4><br>In fact, you took on this project to facilitate your organisation. Thus, the viability of your website is proportionate to the ease of its development.
+					</li>
+					<li><h4>3.  IT MUST REWARD YOU FOR THE EFFORTS INVESTED</h4><br>The main motivator will be the pride you will feel looking at your website and realising that you can utilise your HTML skills to help you get organised.
+					</li>
+				</ul>
+			</div>
+			<div class="coffee-header" align="center" style="color:brown;padding: 1rem;margin: 3rem;" >
+			<i class="fa fa-coffee fa-3x" style="border: solid #511515;border-radius: 50% ;padding: 1rem;margin: 0 5rem 0 0 ;color: #511515;" ></i>
+
+			<span style="display: inline-block;font-size: 2.4rem;color:#7a1f1f"><div>Caffeine Corner</div><div style="cursor: pointer;border:0.25rem solid #511515;color:#7a1f1f;" onmouseover="style.color='#282424';style.background='#867979';" onmouseleave="style.color='#7a1f1f';style.background='#fff';" onclick="modality();myFunction();" id="btn-coffee">Order a Cup!</div></span>
+
+			<i class="fa fa-coffee fa-3x" style="border: solid #511515;border-radius: 50% ;padding: 1rem;margin: 0  0 0 5rem;color: #511515;" ></i>
+			</div>
+			<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>The Caffeine Break section involves a book related to the blog and as with any book club, this is best done around a cup of tea or coffee. Today, I am going for green tea with lemon and honey. Go ahead and pour yourself a cup of your favorite beverage and we'll get started.</p>
+  </div>
+
+</div>
+			<div style="display: none;" id="text">
+				<h3>I would like to talk more in-depth about the general idea of starting a habit.</h3><p style="text-align: justify;"> To start off, making a website is about building the habit of recording and planning your workload so as to stay on top of it.<br> <br>
+				To better understand how habits influence the activities we commit to, I turned to James Clear’s <em>Atomic Habits</em>. As mentioned in the Introduction blog, this project is not a one-time little trial, thus reading <em>Atomic Habits</em> enlightened me on long term strategies. I would like to share with you my two key takeaways from this wonderful expert book.<br><br>
+				<em style="font-weight:bold" class="highlight">1. The key to success is in finding what is right for you.</em> <br>
+				James Clear writes: </p><p class="quote">“Many people think they lack motivation when what they really lack is clarity” (Clear, 70)</p><p>  and suggests what researchers call an implementation intention. I extend its definition to include a “what task will I do?” clause such that the final intention goes along the lines of: “ I will [design/create/test/] my [webpage] after [a specific time]”. The specific time refers to a moment in your day that would be convenient, such as after checking emails at your computer, or before starting your favourite class at 2:30 pm.<br><br>
+				<em style="font-weight:bold" class="highlight">2. Simplify the technical management side as much as you can.</em> <br>
+				In his book, James Clear sets down 4 laws that motivate you to keep your habit going. The 3rd such law dictates that a habit is prone to survive if it is made easy to practice. Also, Clear backs his law with the physics Principle of Least Action which stipulates: <br>
+				<p class="quote">“The path taken by the system between times t1 and t2 and configurations q1 and q2 is the one for which the action is stationary (no change) to first order” (Penrose 474).</p><br>
+				<p>I find this to be a physicist's way of saying: “the best way to maintain a website is to keep its access straightforward” and, just as in any physics problem, friction will keep you from achieving. This means keeping your main folder on your desktop screen, labeling your sub-folders logically and maintaining a good ratio of functionality to readability in your code. <br>
+				To put all of this more intuitively, consider the following question: “what probably scares most people in creating their own website?”. My guess is that a common misconception leads to believing websites to be these complexe monstrosities, though dealing with a complex entity is very daunting. Therefore, As mentioned in the foundation above, there’s no point in mixing around your files and writing convoluted code. </p></div>
+				
+		<div>
+		<h3>Making our first web page!</h3>
+		<p>All right! We’ve now got our plans drawn out. Let's get started on web development. The first thing you’ll need is a text editor.</p>
+		<div class="tutorial">
+			  <p >It's tutorial time! We're downloading a text editor then we'll make our first webpage.<button onclick="window.open('tutorial.html','blank')">Let's Get Coding</button></p><img src="../images/bmo.gif" style="display: inline-block;max-height:15vh;width: 15vw;float:left; "> 
+			</div>
+		</div>
+		<p>
+		<h3>Designing the web pages.</h3>
+				<div class="projects">
+					 
+					<p>All right! We can now move on to making the actual websites. Below I have explained the ideas behind each application and included my versions (also linked in the Dashboard tab). Remember: this is your website and customizability is everything. As you go along, be sure to make it yours. You could start small and change names and styles, but I encourage you to go as far as changing the whole template.</p>
+					<!-- Agenda tab -->
+					<button class="collapsible" onclick="document.getElementById('defaultOpenA').click();">The Agenda</button>
+					<div class="content">
+						<div class="tab">
+						  <button class="tablinks" onclick="openCity(event, 'Agenda')" id="defaultOpenA">Agenda</button>
+						  <button class="tablinks" onclick="openCity(event, 'Agenda-design')">Design</button>
+						  <button class="tablinks" onclick="openCity(event, 'Agenda-html')">HTML</button>
+						  <button class="tablinks" onclick="openCity(event, 'Agenda-css')">CSS</button>
+						  <button class="tablinks" onclick="openCity(event, 'Agenda-js')">JS</button>
+
+						</div>
+
+						<div id="Agenda" class="tabcontent">
+						  <h3>Agenda</h3>
+						  <p>The Agenda will apply the basics of HTML and CSS covered in the tutorial, to create a blog-style webpage where you can mark down the events of your week. How about summarising a concept you learnt? Or structuring all of the ideas in a project? The possibilities here are as endless as the fun you'll reap!</p>
+						</div>
+
+						<div id="Agenda-design" class="tabcontent size-1">
+						  <h3>Design</h3>
+						  <p><img src="../images/agenda.png" class=""></p>
+						</div> 
+						<div id="Agenda-html" class="tabcontent">
+						  <h3>HTML</h3>
+						  <p>The HTML is a simple page. Just the necessary to display the text and images.</p>
+						  <a class="weblink" href="resources/agenda.html" download>
+  							<p>Here is my approach. </p>
+						</a>
+						</div>
+						<div id="Agenda-css" class="tabcontent">
+						  <h3>CSS</h3>
+						  <p>I decided to go a bit fancy with the background and the highlighted text</p>
+						  <a class="weblink" href="resources/agenda.css" download>
+  							<p>Here is my approach. </p>
+						</a>
+						</div>
+						<div id="Agenda-js" class="tabcontent">
+						  <h3>JS</h3>
+						  <p>No JavaScript yet :) </p>
+						</div>
+					</div>
+
+					<!-- Dashboard tab -->
+					<button class="collapsible" onclick="document.getElementById('defaultOpenD').click();">The Dashboard</button>
+					<div class="content">
+						<div class="tab">
+						  <button class="tablinks" onclick="openCity(event, 'Dashboard')" id="defaultOpenD">Dashboard</button>
+						  <button class="tablinks" onclick="openCity(event, 'Dashboard-design')">Design</button>
+						  <button class="tablinks" onclick="openCity(event, 'Dashboard-html')">HTML</button>
+						  <button class="tablinks" onclick="openCity(event, 'Dashboard-css')">CSS</button>
+				  		  <button class="tablinks" onclick="openCity(event, 'Dashboard-js')">JS</button>
+
+						</div>
+						<div id="Dashboard" class="tabcontent">
+						  <h3>Dashboard</h3>
+						  <p>The Dashboard will serve as a crossroad to link all of the next projects. Also, this is one way to efficiently organise the agenda entries. Next, we’ll make a dashboard that will link every aspect of the website in a convenient way. Temporarily, it will only contain the journal entries, but we will come back often to include the next applications </p>
+						</div> 
+						<div id="Dashboard-design" class="tabcontent size-1">
+						  <h3>Design</h3>
+						  <img src="../images/DASHBOARD.png" class="">
+						</div> 
+						<div id="Dashboard-html" class="tabcontent">
+						  <h3>HTML</h3>
+						  <p>The HTML here is not so important as the styling. As long as you have the links to the parts of your website, you should be good to go.</p>
+						  <a class="weblink" href="resources/dashboard.html" download>
+  							<p>Here is my approach. </p>
+						</a>
+						</div>
+						<div id="Dashboard-css" class="tabcontent">
+						  <h3>Design</h3>
+						  <p>In the CSS, we pay attention to the <em>Grid display</em> and the placement of elements on the page.
+						  I had a bit of trouble with this but then went for simplicity (unlike for the Agenda).</p>
+						  <a class="weblink" href="resources/dashboard.css" download>
+  							<p>Here is my approach. </p>
+						</a>
+						</div>
+						<div id="Dashboard-js" class="tabcontent">
+						  <h3>JavaScript</h3>
+						  <p>Again None needed</p>
+						</div>
+					</div>
+
+
+					<!-- Calendar tab -->
+					<button class="collapsible" onclick="document.getElementById('defaultOpenC').click();">Calendar Time!</button>
+					<div class="content">
+						<div class="tab">
+						  <button class="tablinks" onclick="openCity(event, 'Calendar')" id="defaultOpenC">Calendar</button>
+						  <button class="tablinks" onclick="openCity(event, 'Calendar-design')">Design</button>
+						  <button class="tablinks" onclick="openCity(event, 'Calendar-html')">HTML</button>
+						  <button class="tablinks" onclick="openCity(event, 'Calendar-css')">CSS</button>
+				  		  <button class="tablinks" onclick="openCity(event, 'Calendar-js')">JS</button>
+						</div>
+						<div id="Calendar" class="tabcontent">
+						  <h3>Calendar</h3>
+						  <p>It's time to draw up a calendar. Honestly, a calendar is the hallmark of an organised person. You don't need one in every corner of the house, but having one that you can easily refer to. (I write this as I realise: I have 5 of them active and in use!)</p><p>After that, it’s planning time! In this first application, we will be exploring the possibilities of Javascript programming through a calendar which will help us visualise dates.</p>
+						</div>
+						<div id="Calendar-design" class="tabcontent size-1">
+						  
+						  <h3>Design</h3>
+						  <img src="../images/Calendar.png" class="">
+						</div> 
+						<div id="Calendar-html" class="tabcontent">
+						  <h3>HTML</h3>
+						  <p>
+						  	The HTML for the calendar is not very present. Instead, I decided to generate the date using JS. This is mainly because, as I have come to realise, <strong>not every month starts on a Manday.</strong></p>
+						  	<a class="weblink" href="resources/calendar.html" download>
+  							<p>Here is my approach. The JavaScript code is included in the &lt;script> tag at the bottom</p>
+						</a>
+						</div>
+						<div id="Calendar-css" class="tabcontent" style="max-height:50%;overflow-y: auto;overflow-x: auto;">
+						  <h3>CSS</h3>
+						  <p>In the CSS of this app, I made sure to center my content and give a splash of blue to my calendar. You could use an image instead of a solid colour, simply swap out <em>background-color</em> for <em>background-image.</em> </p>
+						  <a class="weblink" href="resources/calendar.css" download>
+  							<p>Here is my approach. </p>
+						</a>
+						</div>
+						<div id="Calendar-js" class="tabcontent">
+						  <h3>JavaScript</h3>
+						  <p>The Calendar allows us to get exploring how a simple program can enable us to acheive great things. To start off, we define variables using <em>var and let</em>, while we select elements from our HTML file using query selctors:<br>document.getElementsByClass("name of class")<br>document.getElementById("name of id")<br>Also, we work with the <em>Date</em> object provided by the language to manipulate the days and months.</p>
+						</div> 
+					</div> 
+
+
+					<!-- To-Do List tab -->
+					<button class="collapsible" onclick="document.getElementById('defaultOpenT').click();">Last thing on our <em style="all:unset;font-style: italic; ">To-Do list</em></button>
+					<div class="content">
+						<div class="tab">
+						  <button class="tablinks" onclick="openCity(event, 'ToDo')" id="defaultOpenT">To-Do List</button>
+						  <button class="tablinks" onclick="openCity(event, 'ToDo-design')">Design</button>
+						  <button class="tablinks" onclick="openCity(event, 'ToDo-html')">HTML</button>
+						  <button class="tablinks" onclick="openCity(event, 'ToDo-css')">CSS</button>
+				  		  <button class="tablinks" onclick="openCity(event, 'ToDo-js')">JS</button>
+						</div>
+						<div id="ToDo" class="tabcontent">
+						  <h3>To-Do list</h3>
+						  <p>Life usually introduces you to gigantic projects which become the focus of your time until the due date (clears your plate) renews the endless cycle. As a side effect, one may forget to complete less demanding tasks, say:
+						  	<ul>
+						  	<li>Reading the WHO report on the COVID-19 pandemic</li>
+						  	<li>Emailing friends in another city to compare the amount of hand-sanitiser avaible at the local Shopper's Drug Mart</li>
+						  	<li>...And completing that homework due in a week(which is an improvement from the last minute essay) yet handing it in at 11:58pm <em>'cause you live on the edge</em></li>
+						  </ul></p>
+						</div>
+						<div id="ToDo-design" class="tabcontent size-1">
+						  <h3>Design</h3>
+						  <img src="../images/todo.png">
+						</div> 
+						<div id="ToDo-html" class="tabcontent">
+						  <h3>HTML</h3>
+						  <p>
+						  	The HTML for this app is dedicated to position the title, the textbox where the <em>todos</em> will be typed.
+						  </p>
+						  <a class="weblink" href="resources/todo.html" download>
+  							<p>Here is my approach. </p>
+						</a>
+						</div>
+						<div id="ToDo-css" class="tabcontent">
+						  <h3>Design</h3>
+						  <p>In the CSS, I give the list a colour theme to keep away from the bland black and white look we've all come to hate. </p>
+						  <a class="weblink" href="resources/todo.css" download>
+  							<p>Here is my approach. </p>
+						</a>
+						</div>
+						<div id="ToDo-js" class="tabcontent">
+						  <h3>Design</h3>
+						  <p>Lastly, we will make a to-do list using our newfound skills in Javascript, paired with a browser’s local storage. Interacting with the local storage will enable us to save our list without the help of a database (more on that when time comes). The query selectors learned in the calendar app will make a comeback to help the browser read the input of the textbox and process the buttons.</p>
+<!--CHECK-->			  <p><a class="weblink" href="resources/todo.js" download>Here is my approach.</a></p>
+						</div>
+					  <p></p>
+					</div> 
+				</div>
+		</p>	
+		
+		</article>
+		<article>
+			<h3>To Wrap Things Up!</h3>
+		<p>Congratulations on your first steps towards a less intensive stress cycle! I hope making a website has shown you that HTML really is a tool worthy of your time. This might be your first time coding, so do not be pressured in completing every project and polishing every detail. Start small and grow up, not down. The core of the website lies in planning and recording your <em>todos</em>. For the next blog, I will be looking at hosting a local server with Node.js to facilitate the file management and improve the to-do list (we will be moving away from local storage for better reliability). Also, I will be exploring the P5.js library and checking out better coding practices with Dan Cedarholm's <em>Bulletproof Web Design</em>. I see you next time. In the meantime keep coding! </p>
+		</article>
+		
+</div>
+
+		<script type="text/javascript">
+	function openCity(evt, cityName) {
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+	tabcontent[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+	tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+	document.getElementById(cityName).style.display = "block";
+	evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	
+
+	function myFunction() {
+	var x = document.getElementById('text');
+	if (x.style.display === 'none') {
+	x.style.display = 'block';
+	} else {
+	x.style.display = 'none';
+	}}
+
+	var modal_expire = false;
+	function modality(){
+	if (modal_expire == false){
+
+	var modal = document.getElementById("myModal");
+	modal.style.display = "block";
+	// When the user clicks anywhere outside of the modal, close it
+	modal.addEventListener("click", function(){
+	modal.style.display = "none";
+	}) 
+	window.onclick = function(event) {
+	if (event.target == modal) {
+	modal.style.display = "none";
+	}
+	}
+	}
+	modal_expire = true;
+	}
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+	this.classList.toggle("active");
+	var content = this.nextElementSibling;
+	if (content.style.maxHeight){
+	content.style.maxHeight = null;
+	} else {
+	content.style.maxHeight = 100 + "vh";
+	} 
+	});
+	}
+</script>
+    </body></div>
+</html>

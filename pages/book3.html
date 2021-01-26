@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/styles.css">
+<title>HTML-e</title>
+
+<style>
+  body{
+	background: url("../images/blogbg.jpg");
+
+}
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: inherit;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    gap: 10px 50px ;
+  }
+ 
+  p.panel {
+      grid-row-start: 2 ;
+      grid-row-end: 3 ;
+  }
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+  .round_image1{
+    padding: 1% 0% 0% 0%;
+    margin:auto;
+    grid-row-start: 1 ;
+    grid-row-end: 2 ;
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+    
+  }
+  .round_image2{
+    padding: 0% 0% 1% 0%;
+    margin:auto;
+    grid-row-start: 3 ;
+    grid-row-end: 4 ;
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <span><button class="openbtn" onclick="openNav()">&#9776; Explore Content</button></span>
+        <!--<span style="margin-left: 10em;"><img src="images/logo.png" alt="oops"></span>-->
+      </div>
+    </div>
+  </header>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="../splash.html" target="_self">Home</a>
+    <a href="about.html" target="_self">About</a>
+    <a href="inaugural.html">Introduction</a>
+    <a href="post 1.html">First Webpage</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="creds.html">Background Credits</a>
+
+    
+    </div>
+    <script>
+    function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementsByClassName("row title").style.marginLeft = "2500px";
+    }
+    
+    function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementsByClassName("row title").style.marginLeft = "0";
+    }</script> 
+<article>
+  <h1>What Books Am I Reading?</h1>
+
+  <button class="accordion">1. Atomic Habits by James Clear</button>
+  <div class="panel">
+      <img src="../images/james_clear.jpg" alt="" class="round_image1">
+    <p>Atomic Habits is a book by James Clear on how to make extremely small, minimal changes that set you effortlessly on the 
+      right path and that stack over time to show its results. It's a popular book and was recommended to me by Mrs. Laurin so 
+      I look forward to read it and apply the optimistic mindset promoted by the book.
+    </p>
+      <img src="../images/atomichabits.jpg" alt="" class="round_image2">
+  </div>
+  
+  <button class="accordion">2. Bulletproof Web Design 2nd Edition by Dan Cederholm</button>
+  <div class="panel">
+      <img src="../images/dan_cederholm.jpg" alt="" class="round_image1">
+    <p>Bulletproof webdesign is how to style book by Dan Cederholm that goes in depth with the basics of HTML and CSS. Cederholm acheives
+      this by comparing common methodology with his own "bulletproof" approach, thus you can start on the right foot the next time you
+      make a website.
+    </p>
+      <img src="../images/web_design.jpg" alt="" class="round_image2">
+  </div>
+  
+  <button class="accordion">3. 10 Steps To Earning Awesome Grades by Thomas Frank</button>
+  <div class="panel">
+      <img src="../images/thomas_frank.jpg" alt="" class="round_image1">
+    <p>Thomas Frank is a Youtuber I have been watching for a while now, but I recently discovered he also has a podcast on Youtuber
+      called The Collage Info Geek Podcast. As a whole, his work revolves around how to lead a better lifestyle for student typically
+    in post-secondary, though his tips are very compatible for high school students and help me whenever I feel like I'm missing a puzzle
+      piece. According to Frank, 10 Steps To Earning Awesome Grades is compilation of the most important concepts students should follow
+      in order to acheive better success
+  </p>
+      <img src="../images/opt.jpg" alt="" class="round_image2">
+  </div>
+  <div style="margin:auto;">
+        <iframe width="420" height="250" src="https://www.youtube.com/embed/yzCx7K7VSYA?controls=0">
+      </iframe>
+      </div>
+  <div >
+    <p>Image Credits  <br>
+      <a href="https://www.jordanharbinger.com/james-clear-forming-atomic-habits-for-astronomic-results/" target="_blank">James Clear</a>
+      <a href="https://jamesclear.com/books" target="_blank">Atomic Habits</a> <br>
+      <a href="https://medium.com/@simplebits" target="_blank">Dan Cederholm</a>
+      <a href="https://www.amazon.com/Bulletproof-Web-Design-flexibility-protecting/dp/0321509021" target="_blank">Bulletproof Web Design</a> <br>
+      <a href="https://twitter.com/tomfrankly" target="_blank">Thomas Frank</a>
+      <a href="https://www.pinterest.it/pin/137289488806887843/" target="_blank">10 Steps To Earning Awesome Grades</a>
+
+    </p>
+    </div>
+</article>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "grid") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "grid";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

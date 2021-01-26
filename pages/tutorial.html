@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML-e</title>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+       <!--<link rel="stylesheet" href="css/debug.css">-->
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+		
+
+		<style type="text/css">
+			.collapsible {
+		  background-color: #777;
+		  color: white;
+		  cursor: pointer;
+		  padding: 18px;
+		  width: 95%;
+		  border: none;
+		  text-align: left;
+		  outline: none;
+		  font-size: 15px;
+
+		}
+		.active, .collapsible:hover {
+			  background-color: #555;
+			}
+
+			.content {
+			  padding: 0 18px;
+			  max-height: 100vh;
+			  overflow: hidden;
+			  transition: max-height 0.2s ease-out;
+			  background-color: #f1f1f1;
+			}
+			/* Style the tab */
+			.tab {
+			  overflow: hidden;
+			  border: 1px solid #ccc;
+			  background-color: #f1f1f1;
+			}
+
+			/* Style the buttons inside the tab */
+			.tab button {
+			  background-color: inherit;
+			  float: left;
+			  border: none;
+			  outline: none;
+			  cursor: pointer;
+			  padding: 14px 16px;
+			  transition: 0.3s;
+			  font-size: 17px;
+			}
+
+			/* Change background color of buttons on hover */
+			.tab button:hover {
+			  background-color: #ddd;
+			}
+
+			/* Create an active/current tablink class */
+			.tab button.active {
+			  background-color: #ccc;
+			}
+
+			/* Style the tab content */
+			.tabcontent {
+			  display: none;
+			  padding: 6px 12px;
+			  border: 1px solid #ccc;
+			  border-top: none;
+			}
+
+			/* Style the close button */
+			.topright {
+			  float: right;
+			  cursor: pointer;
+			  font-size: 28px;
+			}
+
+			.topright:hover {color: red;}
+
+			/* Style the tab content */
+			.tabcontent {
+			  display: block;
+			  padding: 6px 12px;
+			  border: 1px solid #ccc;
+			  border-top: none;
+			  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+			} 
+
+
+			/* Go from zero to full opacity */
+			@keyframes fadeEffect {
+			  from {opacity: 0;}
+			  to {opacity: 1;}
+			}
+
+		.tutorial{
+			border: 1rem solid #ccc;
+			overflow: hidden;
+		    display: flex;
+		}
+/* The Modal (background) */
+		.modal {
+		  display: none; /* Hidden by default */
+		  position: fixed; /* Stay in place */
+		  z-index: 1; /* Sit on top */
+		  left: 0;
+		  top: 0;
+		  width: 100%; /* Full width */
+		  height: 100%; /* Full height */
+		  overflow: auto; /* Enable scroll if needed */
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+
+		/* Modal Content/Box */
+		.modal-content {
+		  background-color: #fefefe;
+		  margin: 15% auto; /* 15% from the top and centered */
+		  padding: 20px;
+		  border: 1px solid #888;
+		  width: 60vw; /* Could be more or less, depending on screen size */
+		}
+
+		/* The Close Button */
+		.close {
+		  color: #aaa;
+		  float: right;
+		  font-size: 28px;
+		  font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+		  color: black;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+		.linky{
+			text-decoration: underline;
+		}
+		</style>
+		
+	</head><div class="bigboi">
+    <body>
+
+        <div id="conten">
+			
+
+		<article class="introduction">
+			<h1><a class="highlight">Web Development 101</a></h1>
+			<h2>A Quick And Easy Guide To Get Your First Website Up And Running!</h2>
+
+			<p>
+				<em>So you're looking to kickstart your organisation <strong>skillz</strong>. Hmmm, I think I can help.</em> 
+            </p>
+
+            <p><em style="font-weight:bold" class="highlight">1. Using a Text Editor.</em></p> <br>
+            <p>
+				In order to write the code your browser will display, you need a Text Editor. The most basic one is the note taking app on your computer. However, this approach is not optimal... as you will see in my  next demonstration. 
+            </p>
+			<video width="320" height="240" controls>
+			  <source src="../images/notepadISbad.webm" type="video/webm">
+			  Your browser does not support the video tag. Try Google Chrome
+			</video>
+            <div style="display: flex;">
+			<p style="display: block;width: 100%">Sublime Text is a solution I like! <br><a class="weblink" onclick="modality();" id="btn-tuto">Hey Youssef, I already have a Text Editor I know and love, can I use that instead?</a></p>
+			<figure class="size-3" style="display: inline-block;float: right;">
+				<iframe src="https://www.youtube.com/embed/0Mrxn_Ugjdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</figure></div>
+			
+			<div id="question" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Absolutely, my friend. I suggest Sublime Text for the sake of simplicity. Technically, you could use Microsoft Word to write your website, but I have a feeling Microsoft would not take kindly to that...especially since they had dedicated software for web development.</p>
+  </div>
+
+</div>
+
+			<h3>Onto the Coding!</h3>
+			<h4>What is HTML?</h4>
+			<p>HTML stands for <a class="highlight">Hyper Text Markup Language</a>. Think of it an author, it write all of the content of your webpage, makes sense of titles, headings, text and images. Formely, HTML is a scripting language.</p>
+			
+			
+	<h4>What is CSS?</h4>
+	<p>Adding styling is done through the Cascading Style Sheets language CSS. Think of this guy as the illustrator of the book. Working side by side with our author, CSS enhances the quality of our website, taking it from beginner using bad software *ahem Notepad* to amateur making a blog to get organized and from amateur to Silicon Valley professional.</p><p>
+	How does our artist communicate with our author, you may ask? Easy! We set up their communication through the &lt;link> tag in the header with a path to the .css file
+	&lt;link rel=“style” >
+	To keep things simple and organized, I suggest you keep the .html and .css files next to each other. As you get comfortable working with files, you will be able to link files from anywhere.
+	
+	Lastly, I would like to introduce the Box Model which defines the spacing of an element.</p>
+	<figure class="size-3" style="display: inline-block;float: right;"><img src="../images/box.png"></figure>
+	<p>Briefly said, the border is a line that surrounds the content. You may want to space it away from your content; thus the padding comes into play. When spacing out elements between each other, a margin is specified. Both the padding and the margin are spaces that aerate your content.</p>
+
+	<h4>What is JavaScript?</h4>
+	<p>Last but most certainly not least is JavaScript, or JS for short. This is a programming language used to jazz up your website. Need show/hide content? Worried about getting the days right in your calendar? Worried that your to-do list shows up correctly? JavaScript has you covered! Js say the word.
+	By the way, here’s how JavaScript is linked to your website:
+	Script>.</p>
+			
+	
+
+</div>
+			
+		</article>
+
+		<div class="projects" style="width: 50vw;margin-left: auto;margin-right: auto;">
+					 
+					<p>Below are two websites. The first one is really simple, it is only there to get you started.
+						<strong>HOWEVER</strong>, the second one will show how easy it is to upgrade a basic website to a good looking one without too much work.</p>
+					<!-- Agenda tab -->
+					<button class="collapsible" onclick="document.getElementById('defaultOpenA').click();">The Basic Website</button>
+					<div class="content">
+						<div class="tab">
+						  <button class="tablinks" onclick="openCity(event, 'Agenda')" id="defaultOpenA">Learn</button>
+						  <button class="tablinks" onclick="openCity(event, 'Agenda-design')">W3 Schools</button>
+						</div>
+
+						<div id="Agenda" class="tabcontent">
+						  <h3>Useful resources when learning</h3>
+						  <p>
+						  	All of the web development languages have been developped, however not documented in a traditional way. Instead of picking up a book or taking a class, the twenty first century instructs us to use the web. In fact, here is a list of the leading sources when it comes to learning HTML, CSS and JavaScript. 
+						  	<ul>
+						  		<li><a href="w3schools.com"class="linky">W3 Schools</a> has information about every obscure corner of web development. I use this as my primary look up source when I need to know how a CSS stylesheet is linked, for example.</li>
+						  		<li><a href="developer.mozilla.org" class="linky">Mozilla Developer Network</a>, or MDN for short. The makers of the FireFox browser themsleves document all there is to know about HTML. Their documentation might be long to read, but it sure is complete.</li>
+						  		<li><a href="https://stackoverflow.com/"class="linky">Stack Overflow</a>. No list of coding resource would complete without these guys. If you have a problem, chances are someone else had it too. The solution to that problem is probably there, waiting for you. In just a few clicks, you can also ask your own questions. Just a tip: their website is slightly harder to navigate. I prefer to google the problem and add 'Stack' at the end to find the right page.</li>
+
+						  </p>
+						</div>
+
+						<div id="Agenda-design" class="tabcontent size-1">
+						  <h3>Tutorial Time</h3>
+						  <p>From W3 Schools, here is a quick setup. Use this to familiarise yourself before moving onto your personnal pages <a href="https://www.w3schools.com/howto/howto_make_a_website.asp" class="linky"> Get Coding</p>
+						  
+						</div> 
+						
+					</div>
+
+					
+				</div>
+
+</div>
+<script type="text/javascript">
+	function modality(){
+
+	var modal = document.getElementById("question");
+	modal.style.display = "block";
+	// When the user clicks anywhere outside of the modal, close it
+	modal.addEventListener("click", function(){
+	modal.style.display = "none";
+	}) 
+	window.onclick = function(event) {
+	if (event.target == modal) {
+	modal.style.display = "none";
+	}
+	}
+	}
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+	this.classList.toggle("active");
+	var content = this.nextElementSibling;
+	if (content.style.maxHeight){
+	content.style.maxHeight = null;
+	} else {
+	content.style.maxHeight = 100 + "vh";
+	} 
+	});
+	}
+	function openCity(evt, cityName) {
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+	tabcontent[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+	tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+	document.getElementById(cityName).style.display = "block";
+	evt.currentTarget.className += " active";
+	}
+</script>
+</body></div>
+</html>

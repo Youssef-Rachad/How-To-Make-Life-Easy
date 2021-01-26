@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML-e</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
+        <!--<link rel="stylesheet" href="css/debug.css">-->
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<style>
+		body{
+			background:   url("../images/blogbg.jpg");
+		}
+		</style>
+	</head>
+    <body>
+        <div id="conten">
+			<header>
+				<div class="container">
+				  <div class="row">
+					<span><button class="openbtn" onclick="openNav()">&#9776; Explore Content</button></span>
+					<!--<span style="margin-left: 10em;"><img src="images/logo.png" alt="oops"></span>-->
+				  </div>
+				</div>
+			  </header>
+			  <div id="mySidebar" class="sidebar">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="../splash.html" target="_self">Home</a>
+				<a href="inaugural.html">Introduction</a>
+				<a href="book3.html">My 3 Books</a>
+				<a href="creds.html">Background Credits</a>
+				<a href="dashboard.html">Dashboard</a>
+
+				
+				</div>
+				<script>
+				function openNav() {
+				document.getElementById("mySidebar").style.width = "250px";
+				document.getElementsByClassName("row title").style.marginLeft = "2500px";
+				}
+				
+				function closeNav() {
+				document.getElementById("mySidebar").style.width = "0";
+				document.getElementsByClassName("row title").style.marginLeft = "0";
+				}</script> 
+			
+		<article id="introduction">
+			<h1>About Myself</h1>
+			<h2>As a high schooler, I think it's important to introduce <br>
+				myself before we begin making websites.</h2>
+
+				<p>
+					Hello, I am Youssef Rachad. I attend École Secondaire Roméo-Dallaire and as part of my English 12 class, 
+					I am writing a website on getting organised by making your own HTML creation. I have quite a lot of experience
+					writing code from my programming classes and the enormous free time I spend exploring code. My first big website
+					is this <a href="../Page_Telescope/page.html" target="_blank">one</a> and it has inspired me to continue developping
+					websites. <br> <br>
+					You can now see why, when Mrs. Laurin announced that a blog was a possible format for this semester's 
+					ISU, I did not hesitate to choose it. This time however, I would like to share this passion of mine with you.
+					 <br> <br></p>
+					<figure class="size-3"><img src="../images/html.jpg" alt="" ></figure>
+					<figcaption>Image Credit: https://www.shutterstock.com/fr/video/clip-28805074-html-css-code-developing-website-design-programming</figcaption>
+					<br> <br><p>
+					Wether you're a high school student trying to set yourself up for success (I know I am!) or deciding to learn the 
+					skills you need to code a website through a concrete application, this blog will be a great oppurtunity for you to 
+					learn and experience the joys of getting organised. It doesn't sound very amusing at first, but trust me, this will
+					get interesting very quickly. <br> <br> 
+					Personnally, I am doing this project to better myself in my English class, and also to
+					prepare myself for university, where I hope to study mechatronics engineering. In fact, the spirit of engineering lies
+					in being organised, from planning to scheduling deadlines, and even recording feedback. I will use these various 
+					aspects to measure my performance, though I invite you to do the same if you have ongoing projects and would like to 
+					stay on top of your tasks. <br> <br>
+					When I'm not coding, I like to read while drinking tea. Mint tea, green tea, lemon & ginger tea, whith or without honey
+					/milk, you name it! As for my reading material, it has great diversity since I read up on current events and visit old
+					classics, adding on that my bilingualism and the cornucopia of litterary works never ceases to run dry. More specifically,
+					I often read adventure books from H.G. Wells and Jules Vernes because they remind me that life is not about the destination,
+					it's about the journey. <br> <br>
+					So embark with me as I go exploring far and wide in search of different strategies to get organised and wield the power of HTML at its 
+					fullest potential.
+
+				</p>
+			<figure class="size-1" style="background: none;"><img src="../images/about.jpg" alt="" style="border-radius: 40%; max-width: 50%;"></figure>
+		</article>
+		</div>
+		
+    </body>
+</html>

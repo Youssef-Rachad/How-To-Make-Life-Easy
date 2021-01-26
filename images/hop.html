@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Entries</title>
+	<style type="text/css">
+		:root { font: 20px/1.2 , sans-serif; }/*roboto*/
+
+body * {
+	margin:          unset;
+	box-sizing:      unset;
+	padding:         unset;
+	font-size:       unset;
+	color:           unset;
+	text-decoration: unset;
+}
+
+body{
+}
+.bigboi{z-index: 1;}
+.bigboi:before{
+  background-attachment: fixed;
+  background-position: 0% -10.0%;
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:url("blogbg.jpg");
+  opacity: 0.4;
+  filter:alpha(opacity=40);
+  background-repeat: repeat;  
+}
+article {
+	padding: 20px 0;
+	display: grid;
+	grid-template-columns: 2fr  [start]  1fr 1fr 1fr 1fr  [end] 2fr;
+	
+}
+
+article * { grid-column: start / end; background:rgba(255,255,255,0.90);}
+ a{
+  box-shadow: inset 0 -0.25em hsl(55, 100%, 75%);
+  font-size: 2rem;
+  margin:0.5rem 1rem;
+}
+.entry{
+	margin:1.5rem;
+}
+h1  { font: 700 2.5rem/1.2 "Roboto"; color: hsl(000, 000%, 30%); padding-bottom: 1rem;
+	margin:auto; width:50vw; text-align: center;
+	box-shadow: inset 0 -0.25em hsl(55, 100%, 75%);}
+
+
+	</style>
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+<div class="bigboi">
+<body>
+	<header>
+		<h1>This is the list of Agenda Entries</h1>
+	</header>
+	
+<article>
+		<div class="entry">
+	    		<i class="fa fa-calendar fa-5x" style="margin:0 1rem 0 0;float: left;"></i><a href="calendar.html">This is an entry</a> <p style="font-size: 1.5rem;"> This is the date of the Entry</p>
+    	</div>
+    	<div class="entry">
+	    		<i class="fa fa-calendar fa-5x" style="margin:0 1rem 0 0;float: left;"></i><a href="calendar.html">This is an entry</a> <p style="font-size: 1.5rem;margin-left: 1rem;"> This is the date of the Entry</p>
+    	</div>
+    	<div class="entry">
+	    		<i class="fa fa-calendar fa-5x" style="margin:0 1rem 0 0;float: left;"></i><a href="calendar.html">This is an entry <p style="font-size: 1.5rem;"> This is the date of the Entry</p>
+    	</div>
+</article>
+</body>
+</div>
+</html>

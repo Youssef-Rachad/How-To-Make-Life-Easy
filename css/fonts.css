@@ -1,0 +1,36 @@
+@font-face{
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-Regular.ttf");
+}
+@font-face{
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-Bold.ttf");
+  font-weight: bold;
+}
+@font-face{
+  font-family: "Product Sans";
+  src: url("Product Sans/Product Sans-Regular.ttf");
+}
+@font-face{
+  font-family: "Product Sans";
+  src: url("Product Sans/Product Sans-Bold.ttf");
+  font-weight: bold;
+}
+@font-face{
+  font-family: "Lato";
+  src: url("Lato/Lato-Regular.ttf");
+}
+@font-face{
+  font-family: "Lato";
+  src: url("Lato/Lato-Bold.ttf");
+  font-weight: bold;
+}
+@font-face{
+  font-family: "E";
+  src: url("E/E-Regular.otf");
+}
+@font-face{
+  font-family: "E";
+  src: url("E/E-Bold.otf");
+  font-weight: bold;
+}
